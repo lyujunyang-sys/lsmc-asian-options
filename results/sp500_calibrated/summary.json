@@ -1,0 +1,49 @@
+{
+  "config": {
+    "name": "sp500_calibrated",
+    "description": "All model inputs estimated from S&P 500 closes and the 10-year Treasury yield, 2015-01-01 to 2023-12-31 (valuation date = last trading day). Strike at the moneyness of Table 6-1 (4050 / 4000).",
+    "seed": 20250909,
+    "market_from": "data/calibrated/sp500_2015-2023_DGS10.json",
+    "contract": {
+      "maturity": 1.0,
+      "n_steps": 252,
+      "strike_moneyness": 1.0125,
+      "kinds": [
+        "call"
+      ]
+    },
+    "simulation": {
+      "n_paths": 10000,
+      "n_paths_out_of_sample": 10000,
+      "antithetic": true,
+      "batch_size": 20000,
+      "lsmc_degree": 2
+    },
+    "tables": [
+      "pricing"
+    ]
+  },
+  "config_file": "configs/sp500_calibrated.json",
+  "resolved_market": {
+    "s0": 4769.8301,
+    "sigma_s": 0.13138231686492086,
+    "r0": 0.0388,
+    "kappa": 0.2585071994702791,
+    "theta": 0.030498564655623346,
+    "sigma_r": 0.008503862553634911,
+    "rho": 0.18653315189877015,
+    "dividend_yield": 0.0
+  },
+  "strike": 4829.45,
+  "valuation_date": "2023-12-29",
+  "zero_coupon_bond_P0T": 0.9629018288807738,
+  "total_runtime_s": 10.02,
+  "environment": {
+    "lsmc_asian": "1.0.0",
+    "python": "3.10.19",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pandas": "2.3.3",
+    "platform": "Windows-10-10.0.26200-SP0"
+  }
+}

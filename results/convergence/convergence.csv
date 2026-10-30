@@ -1,0 +1,37 @@
+study,method,n_paths,degree,price,std_error,runtime_s
+paths,MC,1000,,5.58122,0.242404,0.0215987
+paths,MC + antithetic + control variate,1000,,5.40056,0.00616236,0.0218363
+paths,MC,2000,,5.29903,0.171772,0.0368197
+paths,MC + antithetic + control variate,2000,,5.40829,0.00465214,0.0461852
+paths,MC,5000,,5.43145,0.111808,0.0864073
+paths,MC + antithetic + control variate,5000,,5.40242,0.00311863,0.10459
+paths,MC,10000,,5.39378,0.0794244,0.189635
+paths,MC + antithetic + control variate,10000,,5.40492,0.00215549,0.174295
+paths,MC,20000,,5.41266,0.0559855,0.39541
+paths,MC + antithetic + control variate,20000,,5.40599,0.00159216,0.269367
+paths,MC,50000,,5.41258,0.0353163,0.73138
+paths,MC + antithetic + control variate,50000,,5.40479,0.000983992,1.23241
+paths,MC,100000,,5.43265,0.0250064,2.88861
+paths,MC + antithetic + control variate,100000,,5.40311,0.000685428,1.29045
+paths,MC,200000,,5.43197,0.01766,5.96341
+paths,MC + antithetic + control variate,200000,,5.4045,0.000491968,6.50936
+paths,LSMC in-sample,1000,2,5.98122,0.172173,0.106145
+paths,LSMC out-of-sample,1000,2,5.78372,0.171147,0.106145
+paths,LSMC in-sample,2000,2,6.02673,0.126285,0.162517
+paths,LSMC out-of-sample,2000,2,6.03347,0.12325,0.162517
+paths,LSMC in-sample,5000,2,5.93402,0.0761901,0.300421
+paths,LSMC out-of-sample,5000,2,6.02515,0.0762406,0.300421
+paths,LSMC in-sample,10000,2,5.91212,0.0541127,1.41221
+paths,LSMC out-of-sample,10000,2,5.98708,0.0544825,1.41221
+paths,LSMC in-sample,20000,2,5.90812,0.0387399,3.66022
+paths,LSMC out-of-sample,20000,2,5.98581,0.0384369,3.66022
+paths,LSMC in-sample,50000,2,5.92688,0.024237,11.7998
+paths,LSMC out-of-sample,50000,2,5.97813,0.0244064,11.7998
+degree,LSMC in-sample,20000,1,5.91296,0.0387417,2.97335
+degree,LSMC out-of-sample,20000,1,5.88029,0.0381215,2.97335
+degree,LSMC in-sample,20000,2,5.92836,0.0379008,3.91218
+degree,LSMC out-of-sample,20000,2,5.99558,0.0383754,3.91218
+degree,LSMC in-sample,20000,3,5.93245,0.0377948,6.74701
+degree,LSMC out-of-sample,20000,3,5.96211,0.0388915,6.74701
+degree,LSMC in-sample,20000,4,5.97682,0.0378894,9.53835
+degree,LSMC out-of-sample,20000,4,5.93321,0.0382312,9.53835

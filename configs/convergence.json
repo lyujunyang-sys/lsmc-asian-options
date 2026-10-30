@@ -1,0 +1,15 @@
+{
+  "name": "convergence",
+  "description": "Standard error against the number of paths (plain MC vs antithetic + control variate, and LSMC), and LSMC against the polynomial degree. Appendix parameters, at-the-money call.",
+  "seed": 20241018,
+  "market": {"s0": 100.0, "sigma_s": 0.20, "r0": 0.03, "kappa": 0.10, "theta": 0.05, "sigma_r": 0.02, "rho": 0.0, "dividend_yield": 0.0},
+  "contract": {"maturity": 1.0, "n_steps": 40, "strike": 100.0},
+  "simulation": {"n_paths": 10000, "antithetic": true, "batch_size": 20000},
+  "convergence": {
+    "n_paths": [1000, 2000, 5000, 10000, 20000, 50000, 100000, 200000],
+    "lsmc_n_paths": [1000, 2000, 5000, 10000, 20000, 50000],
+    "degrees": [1, 2, 3, 4],
+    "degree_n_paths": 20000
+  },
+  "tables": ["convergence"]
+}

@@ -1,0 +1,25 @@
+product,method,price,std_error,ci95_low,ci95_high,n_samples,runtime_s,variance_reduction,z_vs_exact,early_exercise_premium
+arithmetic Asian call (European exercise),MC,5.37085,0.0789303,5.21614,5.52555,10000,0.0780004,,,
+arithmetic Asian call (European exercise),MC + antithetic,5.45304,0.0570873,5.34115,5.56493,10000,0.0679728,1.91165,,
+arithmetic Asian call (European exercise),MC + control variate,5.40644,0.0022061,5.40211,5.41076,10000,0.0756637,1280.08,,
+arithmetic Asian call (European exercise),MC + antithetic + control variate,5.40282,0.00222832,5.39845,5.40718,10000,0.0664528,1254.68,,
+geometric Asian call (European exercise),closed form,5.20618,0,5.20618,5.20618,,0.0007177,,,
+geometric Asian call (European exercise),MC + antithetic,5.22602,0.0555824,5.11708,5.33496,10000,0.0766569,,0.356961,
+European call,closed form,9.4711,0,9.4711,9.4711,,0.0302278,,,
+European call,MC + antithetic,9.48963,0.105515,9.28282,9.69644,10000,0.0496913,,0.175624,
+arithmetic Asian call (Bermudan exercise),"LSMC, in-sample",5.9386,0.0538607,5.83303,6.04417,10000,0.284271,,,
+arithmetic Asian call (Bermudan exercise),"LSMC, out-of-sample",6.0134,0.0560797,5.90349,6.12332,10000,0.284271,,,0.632729
+arithmetic Asian call (Bermudan exercise),"LSMC + control variate, in-sample",5.94809,0.0191315,5.91059,5.98558,10000,0.325778,,,
+arithmetic Asian call (Bermudan exercise),"LSMC + control variate, out-of-sample",5.95367,0.0194991,5.91545,5.99188,10000,0.325778,,,0.549349
+arithmetic Asian put (European exercise),MC,3.85064,0.0571433,3.73864,3.96264,10000,0.0748568,,,
+arithmetic Asian put (European exercise),MC + antithetic,3.97563,0.0427594,3.89182,4.05944,10000,0.0654792,1.78594,,
+arithmetic Asian put (European exercise),MC + control variate,3.86569,0.00144654,3.86285,3.86852,10000,0.077438,1560.52,,
+arithmetic Asian put (European exercise),MC + antithetic + control variate,3.86869,0.00137987,3.86598,3.87139,10000,0.121827,1714.95,,
+geometric Asian put (European exercise),closed form,4.00204,0,4.00204,4.00204,,0.0011281,,,
+geometric Asian put (European exercise),MC + antithetic,3.97445,0.0436126,3.88897,4.05993,10000,0.137342,,-0.632648,
+European put,closed form,6.42781,0,6.42781,6.42781,,0.0008609,,,
+European put,MC + antithetic,6.34958,0.0668544,6.21855,6.48062,10000,0.0850204,,-1.17007,
+arithmetic Asian put (Bermudan exercise),"LSMC, in-sample",4.42354,0.0379155,4.34923,4.49786,10000,0.616138,,,
+arithmetic Asian put (Bermudan exercise),"LSMC, out-of-sample",4.45479,0.0383149,4.37969,4.52989,10000,0.616138,,,0.619732
+arithmetic Asian put (Bermudan exercise),"LSMC + control variate, in-sample",4.45883,0.016587,4.42632,4.49134,10000,1.22823,,,
+arithmetic Asian put (Bermudan exercise),"LSMC + control variate, out-of-sample",4.47783,0.0165031,4.44548,4.51018,10000,1.22823,,,0.611008

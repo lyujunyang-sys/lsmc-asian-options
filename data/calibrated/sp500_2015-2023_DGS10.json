@@ -1,0 +1,46 @@
+{
+  "valuation_date": "2023-12-29",
+  "market": {
+    "s0": 4769.8301,
+    "sigma_s": 0.13138231686492086,
+    "r0": 0.0388,
+    "kappa": 0.2585071994702791,
+    "theta": 0.030498564655623346,
+    "sigma_r": 0.008503862553634911,
+    "rho": 0.18653315189877015,
+    "dividend_yield": 0.0
+  },
+  "diagnostics": {
+    "price_obs": 2264,
+    "price_first_date": "2015-01-02",
+    "rate_obs": 2251,
+    "rate_first_date": "2015-01-02",
+    "sigma_s_full_sample": 0.183808866758222,
+    "sigma_s_rolling_window": 252,
+    "sigma_s_rolling_mean": 0.174626561254246,
+    "sigma_s_rolling_min": 0.06670120056938127,
+    "sigma_s_rolling_max": 0.34950092708134256,
+    "vasicek": {
+      "kappa": 0.2585071994702791,
+      "theta": 0.030498564655623346,
+      "sigma": 0.008503862553634911,
+      "ar_intercept": 3.1270063800221e-05,
+      "ar_slope": 0.9989747037556256,
+      "residual_sd": 0.0005354183426240577,
+      "n_obs": 2251,
+      "dt": 0.003968253968253968,
+      "kappa_se": 0.5042040894555957,
+      "theta_se": 0.020399612617261455,
+      "sigma_se": 0.00012215889665223608,
+      "bootstrap_reps": 500,
+      "bootstrap_failures": 4
+    },
+    "bootstrap_seed": 20230101
+  },
+  "rate_series": "DGS10",
+  "data_window": {
+    "start": "2015-01-01",
+    "end": "2023-12-31"
+  },
+  "data_manifest": "data/manifest.json"
+}

@@ -1,0 +1,57 @@
+{
+  "config": {
+    "name": "paper_table_6_1",
+    "description": "Parameter values of Table 6-1 in the paper (S&P 500 scale): S0 = 4000, K = 4050, one year, 252 daily monitoring dates.",
+    "seed": 20241017,
+    "market": {
+      "s0": 4000.0,
+      "sigma_s": 0.2,
+      "r0": 0.025,
+      "kappa": 0.1,
+      "theta": 0.02,
+      "sigma_r": 0.015,
+      "rho": 0.0,
+      "dividend_yield": 0.0
+    },
+    "contract": {
+      "maturity": 1.0,
+      "n_steps": 252,
+      "strike": 4050.0,
+      "kinds": [
+        "call"
+      ]
+    },
+    "simulation": {
+      "n_paths": 10000,
+      "n_paths_out_of_sample": 10000,
+      "antithetic": true,
+      "batch_size": 20000,
+      "lsmc_degree": 2
+    },
+    "tables": [
+      "pricing"
+    ]
+  },
+  "config_file": "configs/paper_table_6_1.json",
+  "resolved_market": {
+    "s0": 4000.0,
+    "sigma_s": 0.2,
+    "r0": 0.025,
+    "kappa": 0.1,
+    "theta": 0.02,
+    "sigma_r": 0.015,
+    "rho": 0.0,
+    "dividend_yield": 0.0
+  },
+  "strike": 4050.0,
+  "zero_coupon_bond_P0T": 0.9755798030838391,
+  "total_runtime_s": 31.91,
+  "environment": {
+    "lsmc_asian": "1.0.0",
+    "python": "3.10.19",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pandas": "2.3.3",
+    "platform": "Windows-10-10.0.26200-SP0"
+  }
+}

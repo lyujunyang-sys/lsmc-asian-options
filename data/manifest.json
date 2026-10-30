@@ -1,0 +1,35 @@
+{
+  "window": {
+    "start": "2015-01-01",
+    "end": "2023-12-31"
+  },
+  "files": [
+    {
+      "file": "data/raw/sp500_close.csv",
+      "source": "Yahoo Finance via yfinance, ticker ^GSPC, field Close",
+      "retrieved_utc": "2026-10-30T05:28:50Z",
+      "rows": 2264,
+      "first_date": "2015-01-02",
+      "last_date": "2023-12-29",
+      "sha256": "742a61e762d5cac76f86bc487763a5a9b8ca69ce3f3352c13865298802378081"
+    },
+    {
+      "file": "data/raw/fred_DGS10.csv",
+      "source": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10&cosd=2015-01-01&coed=2023-12-31",
+      "retrieved_utc": "2026-10-30T05:28:50Z",
+      "rows": 2251,
+      "first_date": "2015-01-02",
+      "last_date": "2023-12-29",
+      "sha256": "9a639e07e6d53ebd91d6cb9e1eb8d5e734d3f861fe3eaa566336fb42544452e6"
+    },
+    {
+      "file": "data/raw/fred_DGS3MO.csv",
+      "source": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS3MO&cosd=2015-01-01&coed=2023-12-31",
+      "retrieved_utc": "2026-10-30T05:28:50Z",
+      "rows": 2251,
+      "first_date": "2015-01-02",
+      "last_date": "2023-12-29",
+      "sha256": "0e0aadc46c9efd6d4a1e11fb3e8730d8508803663fae7e959e45245d5b546527"
+    }
+  ]
+}

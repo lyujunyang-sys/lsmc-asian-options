@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "lsmc-asian: least-squares Monte Carlo pricing of Asian options under Vasicek rates"
+authors:
+  - family-names: Lyu
+    given-names: Junyang
+license: MIT
+version: 1.0.0
+date-released: 2026-10-29
+preferred-citation:
+  type: article
+  title: "Research on Asian Option Pricing Model Based on Least Squares Monte Carlo Method (基于最小二乘蒙特卡洛法的亚式期权定价模型研究)"
+  authors:
+    - family-names: Lyu
+      given-names: Junyang
+  journal: "Special Zone Economy (特区经济)"
+  year: 2026
+  issue: "4"

@@ -1,0 +1,13 @@
+product,method,price,std_error,ci95_low,ci95_high,n_samples,runtime_s,variance_reduction,z_vs_exact,early_exercise_premium
+arithmetic Asian call (European exercise),MC,156.011,2.2559,151.59,160.433,10000,0.78364,,,
+arithmetic Asian call (European exercise),MC + antithetic,156.129,1.67592,152.844,159.414,10000,0.720088,1.81189,,
+arithmetic Asian call (European exercise),MC + control variate,159.007,0.0448173,158.919,159.094,10000,0.797183,2533.66,,
+arithmetic Asian call (European exercise),MC + antithetic + control variate,159.042,0.0456377,158.952,159.131,10000,0.684418,2443.39,,
+geometric Asian call (European exercise),closed form,154.65,0,154.65,154.65,,0.0238175,,,
+geometric Asian call (European exercise),MC + antithetic,157.832,1.63782,154.622,161.042,10000,0.6731,,1.94294,
+European call,closed form,312.527,0,312.527,312.527,,0.0006906,,,
+European call,MC + antithetic,313.024,3.1004,306.948,319.101,10000,0.42372,,0.160544,
+arithmetic Asian call (Bermudan exercise),"LSMC, in-sample",164.832,1.55193,161.79,167.874,10000,2.48682,,,
+arithmetic Asian call (Bermudan exercise),"LSMC, out-of-sample",170.989,1.61804,167.818,174.161,10000,2.48682,,,18.2225
+arithmetic Asian call (Bermudan exercise),"LSMC + control variate, in-sample",170.755,0.523201,169.729,171.78,10000,3.42186,,,
+arithmetic Asian call (Bermudan exercise),"LSMC + control variate, out-of-sample",169.996,0.555375,168.907,171.084,10000,3.42186,,,10.9018

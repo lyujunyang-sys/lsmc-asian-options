@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lsmc-asian"
+version = "1.0.0"
+description = "Least-squares Monte Carlo pricing of Asian options under Vasicek stochastic interest rates"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Junyang Lyu"}]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.23", "scipy>=1.9", "pandas>=1.5"]
+
+[project.optional-dependencies]
+data = ["yfinance>=0.2.40"]
+plots = ["matplotlib>=3.6"]
+notebook = ["matplotlib>=3.6", "jupyter"]
+dev = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = ["slow: long-running statistical checks"]
