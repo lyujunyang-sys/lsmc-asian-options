@@ -1,5 +1,7 @@
 # LSMC pricing of Asian options under Vasicek rates
 
+[![tests](https://github.com/lyujunyang-sys/lsmc-asian-options/actions/workflows/tests.yml/badge.svg)](https://github.com/lyujunyang-sys/lsmc-asian-options/actions/workflows/tests.yml)
+
 Reference implementation for the paper *Research on Asian Option Pricing Model Based on Least Squares Monte Carlo Method* (基于最小二乘蒙特卡洛法的亚式期权定价模型研究), Junyang Lyu, *Special Zone Economy* (特区经济), 2026, Issue 4.
 
 It prices arithmetic-average Asian options when the short rate follows a Vasicek model: European exercise by Monte Carlo with variance reduction, and early (Bermudan) exercise by least-squares Monte Carlo (Longstaff and Schwartz, 2001). The empirical part calibrates the model to S&P 500 and US Treasury data for 2015 to 2023.
@@ -12,7 +14,7 @@ It prices arithmetic-average Asian options when the short rate follows a Vasicek
 - **LSMC.** Backward induction regressing realised discounted cash flows on polynomials in the state (spot, average to date, short rate), in-the-money paths only. The fitted rule is then applied to independent paths, giving an out-of-sample estimate that is a lower bound up to Monte Carlo error.
 - **Calibration.** Vasicek parameters by the exact AR(1) discretisation with parametric-bootstrap standard errors; volatility from rolling 252-day log returns; return/rate correlation.
 - **Reproducibility.** Every experiment is a JSON config with its seed (`configs/`); raw data is downloaded by script with a SHA-256 manifest; results, figures and an executed notebook are committed.
-- **Tests.** 49 tests (see [Validation](#validation)).
+- **Tests.** 49 tests, run on Python 3.10 to 3.12 by GitHub Actions (see [Validation](#validation)).
 
 ## Quick start
 
